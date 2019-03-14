@@ -1,0 +1,32 @@
+{
+  "name": "@jimengio/shared-utils",
+  "version": "0.1.0-a1",
+  "description": "Misc utitilies across sites",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "format": "prettier src/*.ts src/*/*.ts rex/*.ts  --write",
+    "compile": "tsc -d -p tsconfig.json --outDir lib/",
+    "prepublish": "yarn compile",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jimengio/shared-utils.git"
+  },
+  "author": "JIMENG",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jimengio/shared-utils/issues"
+  },
+  "homepage": "https://github.com/jimengio/shared-utils#readme",
+  "devDependencies": {
+    "typescript": "^3.3.3333"
+  },
+  "dependencies": {
+    "emotion": "*",
+    "immer": "*"
+  }
+}
