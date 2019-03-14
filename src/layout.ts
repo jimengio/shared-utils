@@ -54,10 +54,13 @@ export const rowParted = css`
   align-items: center;
 `;
 
-export const flex = css`
+export const expand = css`
   flex: 1;
   overflow: auto;
 `;
+
+// alias of flex
+export const flex = expand;
 
 export const displayFlex = css`
   display: flex;
@@ -132,4 +135,23 @@ export const rowMiddle = css`
   align-items: center;
   justify-content: flex-start;
   flex-direction: row;
+`;
+
+export const middleSection = css`
+  width: 45%;
+  border-right: 1px solid #e8e8e8;
+`;
+
+export const minHeight = css`
+  min-height: 100%;
+`;
+
+export const inlineRowMiddle = css`
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+`;
+
+export const fullHeight = css`
+  height: 100%;
 `;
