@@ -54,6 +54,13 @@ export const rowParted = css`
   align-items: center;
 `;
 
+export const columnParted = css`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+`;
+
 export const expand = css`
   flex: 1;
   overflow: auto;
