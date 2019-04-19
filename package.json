@@ -1,6 +1,6 @@
 {
   "name": "@jimengio/shared-utils",
-  "version": "0.1.1",
+  "version": "0.1.2-a2",
   "description": "Misc utitilies across sites",
   "main": "./lib/index.js",
   "typings": "./lib/index.d.ts",
@@ -10,7 +10,7 @@
   "scripts": {
     "format": "prettier src/*.ts src/*/*.ts rex/*.ts  --write",
     "compile": "tsc -d -p tsconfig.json --outDir lib/",
-    "prepublish": "yarn compile",
+    "prepare": "yarn compile",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,10 +24,17 @@
   },
   "homepage": "https://github.com/jimengio/shared-utils#readme",
   "devDependencies": {
-    "typescript": "^3.4.2"
-  },
-  "dependencies": {
+    "@types/react": "^16.8.13",
     "emotion": "*",
-    "immer": "*"
+    "immer": "^2.1.5",
+    "react": "^16.8.6",
+    "typescript": "^3.4.4"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "@types/react": "*",
+    "emotion": "*",
+    "immer": "*",
+    "react": "*"
   }
 }
