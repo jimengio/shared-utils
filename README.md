@@ -1,4 +1,3 @@
-
 ## Shared Utils
 
 Currently shared files:
@@ -6,4 +5,5 @@ Currently shared files:
 ```
 immer-helpers.ts
 layout.ts
+core-func.ts
 ```
