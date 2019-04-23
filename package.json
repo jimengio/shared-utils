@@ -1,6 +1,6 @@
 {
   "name": "@jimengio/shared-utils",
-  "version": "0.1.2-a3",
+  "version": "0.1.2",
   "description": "Misc utitilies across sites",
   "main": "./lib/index.js",
   "typings": "./lib/index.d.ts",
