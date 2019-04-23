@@ -1,6 +1,6 @@
 {
   "name": "@jimengio/shared-utils",
-  "version": "0.1.1",
+  "version": "0.1.2-a3",
   "description": "Misc utitilies across sites",
   "main": "./lib/index.js",
   "typings": "./lib/index.d.ts",
@@ -10,7 +10,7 @@
   "scripts": {
     "format": "prettier src/*.ts src/*/*.ts rex/*.ts  --write",
     "compile": "tsc -d -p tsconfig.json --outDir lib/",
-    "prepublish": "yarn compile",
+    "prepare": "yarn compile",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,7 +27,8 @@
     "typescript": "^3.4.2"
   },
   "dependencies": {
+    "@types/lodash": "^4.14.123",
     "emotion": "*",
-    "immer": "*"
+    "immer": "^2.1.5"
   }
 }
