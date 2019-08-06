@@ -1,8 +1,4 @@
-import _ from "lodash";
 import produce from "immer";
-
-// indend to copy useful function from Clojure, which are not provided by lodash
-// http://cljs.info/cheatsheet/
 
 function iterInterpose(acc: any[], xs: any[], sep: any): any[] {
   if (xs.length === 0) {
@@ -24,7 +20,7 @@ export function some(x: any): boolean {
   return x != null;
 }
 
-export let isFunction = _.isFunction;
+export let isFunction = (x: any) => typeof x === "function";
 
 export let isNil = (x: any) => x == null;
 
@@ -41,6 +37,9 @@ export function isAnEmptyList(x: any): boolean {
 }
 
 export function immerMerge<T = { [k: string]: string }>(x: T, y: T): T {
+  if (x == null) {
+    return y;
+  }
   return produce(x, (draft) => {
     Object.assign(draft, y);
   });

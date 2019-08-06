@@ -24,7 +24,6 @@
   },
   "homepage": "https://github.com/jimengio/shared-utils#readme",
   "devDependencies": {
-    "@types/lodash": "^4.14.123",
     "emotion": "^10.0.9",
     "immer": "^2.1.5",
     "typescript": "^3.4.5"
