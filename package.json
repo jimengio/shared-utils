@@ -1,6 +1,6 @@
 {
   "name": "@jimengio/shared-utils",
-  "version": "0.1.3",
+  "version": "0.1.4-a1",
   "description": "Misc utitilies across sites",
   "main": "./lib/index.js",
   "typings": "./lib/index.d.ts",
@@ -31,5 +31,8 @@
   "peerDependencies": {
     "emotion": "*",
     "immer": "*"
+  },
+  "dependencies": {
+    "fuzzysearch": "^1.0.3"
   }
 }
