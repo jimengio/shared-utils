@@ -66,3 +66,10 @@ relative;
 verticalAlignBottom;
 xHiddenYAuto;
 ```
+
+String functions:
+
+```js
+fuzzyFoundText;
+foundText;
+```
