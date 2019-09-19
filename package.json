@@ -1,6 +1,6 @@
 {
   "name": "@jimengio/shared-utils",
-  "version": "0.1.4",
+  "version": "0.1.5-a2",
   "description": "Misc utitilies across sites",
   "main": "./lib/index.js",
   "typings": "./lib/index.d.ts",
@@ -9,7 +9,7 @@
   },
   "scripts": {
     "format": "prettier src/*.ts src/*/*.ts rex/*.ts  --write",
-    "compile": "tsc -d -p tsconfig.json --outDir lib/",
+    "compile": "rm -rfv lib/* && tsc -d -p tsconfig.json --outDir lib/",
     "prepare": "yarn compile",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -26,10 +26,12 @@
   "devDependencies": {
     "emotion": "^10.0.9",
     "immer": "^2.1.5",
+    "@jimengio/flex-styles": "^0.1.5",
     "typescript": "^3.4.5"
   },
   "peerDependencies": {
     "emotion": "*",
+    "@jimengio/flex-styles": "*",
     "immer": "*"
   },
   "dependencies": {
