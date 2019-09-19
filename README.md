@@ -1,12 +1,14 @@
 ## Shared Utils
 
-> 业务项目当中剥离出来的通用的函数, 用来跨项目复用. 兼容老项目运行为主.
+> 业务项目当中剥离出来的通用的函数, 用来跨项目复用. 兼容老项目运行为主(样式部分建议直接用 [flex-styles](https://github.com/jimengio/flex-styles)).
+
+### Usage
+
+![](https://img.shields.io/npm/v/@jimengio/shared-utils.svg?style=flat-square)
 
 ```bash
 yarn add @jimengio/shared-utils
 ```
-
-### Usage
 
 Immer helper functions:
 
@@ -28,48 +30,17 @@ isAnEmptyList;
 immerMerge;
 ```
 
-Layout styles:
-
-```js
-// layout styles
-
-center;
-column;
-columnParted;
-expand;
-flex; // alias for expand, same
-fullscreen;
-noShrink;
-row;
-rowCenter;
-rowMiddle;
-rowParted;
-
-// preset styles
-
-absCenter;
-absLeftCenter;
-absRightCenter;
-absRightTop;
-alignItemBottom;
-alignItemCenter;
-displayFlex;
-flexWrap;
-fullHeight;
-inlineBlock;
-inlineRow;
-inlineRowMiddle;
-maxHeight80vh;
-middleSection;
-minHeight;
-relative;
-verticalAlignBottom;
-xHiddenYAuto;
-```
-
 String functions:
 
 ```js
 fuzzyFoundText;
 foundText;
 ```
+
+> Layout styles:
+
+> Flexbox related styles has been moved to the package [flex-styles](https://github.com/jimengio/flex-styles).
+
+### License
+
+MIT
