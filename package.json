@@ -25,7 +25,7 @@
   "homepage": "https://github.com/jimengio/shared-utils#readme",
   "devDependencies": {
     "emotion": "^10.0.9",
-    "immer": "^2.1.5",
+    "immer": "^8.0.1",
     "@jimengio/flex-styles": "^0.1.5",
     "typescript": "^3.4.5"
   },
